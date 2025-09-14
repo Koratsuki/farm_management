@@ -1,0 +1,241 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:batch_id",
+ "creation": "2024-01-01 00:00:00.000000",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "batch_id",
+  "farm",
+  "breed",
+  "batch_type",
+  "column_break_5",
+  "initial_count",
+  "current_count",
+  "mortality_count",
+  "section_break_9",
+  "hatch_date",
+  "acquisition_date",
+  "expected_laying_start",
+  "column_break_13",
+  "housing_location",
+  "feed_type",
+  "vaccination_program",
+  "section_break_17",
+  "production_stage",
+  "average_weight",
+  "feed_consumption_daily",
+  "column_break_21",
+  "health_status",
+  "last_health_check",
+  "mortality_rate",
+  "section_break_25",
+  "notes",
+  "image"
+ ],
+ "fields": [
+  {
+   "fieldname": "batch_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Batch ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "farm",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Farm",
+   "options": "Farm",
+   "reqd": 1
+  },
+  {
+   "fieldname": "breed",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Breed",
+   "reqd": 1
+  },
+  {
+   "fieldname": "batch_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Batch Type",
+   "options": "Layers\nBroilers\nBreeders",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "initial_count",
+   "fieldtype": "Int",
+   "label": "Initial Count",
+   "reqd": 1
+  },
+  {
+   "fieldname": "current_count",
+   "fieldtype": "Int",
+   "label": "Current Count",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mortality_count",
+   "fieldtype": "Int",
+   "label": "Mortality Count"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break",
+   "label": "Dates"
+  },
+  {
+   "fieldname": "hatch_date",
+   "fieldtype": "Date",
+   "label": "Hatch Date"
+  },
+  {
+   "fieldname": "acquisition_date",
+   "fieldtype": "Date",
+   "label": "Acquisition Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expected_laying_start",
+   "fieldtype": "Date",
+   "label": "Expected Laying Start"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "housing_location",
+   "fieldtype": "Data",
+   "label": "Housing Location"
+  },
+  {
+   "fieldname": "feed_type",
+   "fieldtype": "Link",
+   "label": "Feed Type",
+   "options": "Feed Type"
+  },
+  {
+   "fieldname": "vaccination_program",
+   "fieldtype": "Data",
+   "label": "Vaccination Program"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break",
+   "label": "Production Details"
+  },
+  {
+   "fieldname": "production_stage",
+   "fieldtype": "Select",
+   "label": "Production Stage",
+   "options": "Chick\nGrower\nLayer\nFinisher\nBreeder"
+  },
+  {
+   "fieldname": "average_weight",
+   "fieldtype": "Float",
+   "label": "Average Weight (kg)"
+  },
+  {
+   "fieldname": "feed_consumption_daily",
+   "fieldtype": "Float",
+   "label": "Feed Consumption (kg/day)"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "health_status",
+   "fieldtype": "Select",
+   "label": "Health Status",
+   "options": "Healthy\nSick\nQuarantine\nTreating"
+  },
+  {
+   "fieldname": "last_health_check",
+   "fieldtype": "Date",
+   "label": "Last Health Check"
+  },
+  {
+   "fieldname": "mortality_rate",
+   "fieldtype": "Percent",
+   "label": "Mortality Rate (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break",
+   "label": "Additional Information"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Farm Management",
+ "name": "Poultry Batch",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Farm Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Farm Worker",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
+

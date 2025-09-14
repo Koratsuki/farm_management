@@ -1,0 +1,189 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-01-01 00:00:00.000000",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "date",
+  "pig",
+  "farm",
+  "column_break_5",
+  "weight",
+  "age_days",
+  "weighed_by",
+  "section_break_9",
+  "weight_gain",
+  "daily_weight_gain",
+  "feed_conversion_ratio",
+  "column_break_13",
+  "body_condition_score",
+  "health_status",
+  "measurement_method",
+  "section_break_17",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "WR-.YYYY.-.MM.-.#####",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pig",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Pig",
+   "options": "Pig",
+   "reqd": 1
+  },
+  {
+   "fieldname": "farm",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Farm",
+   "options": "Farm",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Weight (kg)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "age_days",
+   "fieldtype": "Int",
+   "label": "Age (days)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "weighed_by",
+   "fieldtype": "Link",
+   "label": "Weighed By",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break",
+   "label": "Performance Metrics"
+  },
+  {
+   "fieldname": "weight_gain",
+   "fieldtype": "Float",
+   "label": "Weight Gain (kg)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "daily_weight_gain",
+   "fieldtype": "Float",
+   "label": "Daily Weight Gain (kg/day)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "feed_conversion_ratio",
+   "fieldtype": "Float",
+   "label": "Feed Conversion Ratio"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "body_condition_score",
+   "fieldtype": "Select",
+   "label": "Body Condition Score",
+   "options": "1 - Very Thin\n2 - Thin\n3 - Ideal\n4 - Fat\n5 - Very Fat"
+  },
+  {
+   "fieldname": "health_status",
+   "fieldtype": "Select",
+   "label": "Health Status",
+   "options": "Healthy\nSick\nRecovering"
+  },
+  {
+   "fieldname": "measurement_method",
+   "fieldtype": "Select",
+   "label": "Measurement Method",
+   "options": "Scale\nTape Measure\nEstimate"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break",
+   "label": "Additional Information"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Farm Management",
+ "name": "Weight Record",
+ "naming_rule": "By Naming Series",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Farm Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Farm Worker",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
+

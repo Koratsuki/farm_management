@@ -1,0 +1,240 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-01-01 00:00:00.000000",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "breeding_date",
+  "farm",
+  "sow",
+  "column_break_5",
+  "boar",
+  "breeding_method",
+  "breeding_cycle",
+  "section_break_9",
+  "expected_farrowing_date",
+  "actual_farrowing_date",
+  "gestation_period",
+  "column_break_13",
+  "pregnancy_confirmed",
+  "confirmation_date",
+  "confirmation_method",
+  "section_break_17",
+  "total_piglets_born",
+  "live_piglets",
+  "stillborn_piglets",
+  "column_break_21",
+  "average_birth_weight",
+  "litter_weight",
+  "weaning_date",
+  "section_break_25",
+  "breeding_success",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "BR-.YYYY.-.MM.-.#####",
+   "reqd": 1
+  },
+  {
+   "fieldname": "breeding_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Breeding Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "farm",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Farm",
+   "options": "Farm",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sow",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sow (Female)",
+   "options": "Pig",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "boar",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Boar (Male)",
+   "options": "Pig",
+   "reqd": 1
+  },
+  {
+   "fieldname": "breeding_method",
+   "fieldtype": "Select",
+   "label": "Breeding Method",
+   "options": "Natural Mating\nArtificial Insemination"
+  },
+  {
+   "fieldname": "breeding_cycle",
+   "fieldtype": "Int",
+   "label": "Breeding Cycle"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break",
+   "label": "Pregnancy Details"
+  },
+  {
+   "fieldname": "expected_farrowing_date",
+   "fieldtype": "Date",
+   "label": "Expected Farrowing Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "actual_farrowing_date",
+   "fieldtype": "Date",
+   "label": "Actual Farrowing Date"
+  },
+  {
+   "fieldname": "gestation_period",
+   "fieldtype": "Int",
+   "label": "Gestation Period (days)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pregnancy_confirmed",
+   "fieldtype": "Check",
+   "label": "Pregnancy Confirmed"
+  },
+  {
+   "fieldname": "confirmation_date",
+   "fieldtype": "Date",
+   "label": "Confirmation Date"
+  },
+  {
+   "fieldname": "confirmation_method",
+   "fieldtype": "Select",
+   "label": "Confirmation Method",
+   "options": "Ultrasound\nBlood Test\nPhysical Examination\nOther"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break",
+   "label": "Farrowing Results"
+  },
+  {
+   "fieldname": "total_piglets_born",
+   "fieldtype": "Int",
+   "label": "Total Piglets Born"
+  },
+  {
+   "fieldname": "live_piglets",
+   "fieldtype": "Int",
+   "label": "Live Piglets"
+  },
+  {
+   "fieldname": "stillborn_piglets",
+   "fieldtype": "Int",
+   "label": "Stillborn Piglets"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "average_birth_weight",
+   "fieldtype": "Float",
+   "label": "Average Birth Weight (kg)"
+  },
+  {
+   "fieldname": "litter_weight",
+   "fieldtype": "Float",
+   "label": "Total Litter Weight (kg)"
+  },
+  {
+   "fieldname": "weaning_date",
+   "fieldtype": "Date",
+   "label": "Weaning Date"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break",
+   "label": "Additional Information"
+  },
+  {
+   "fieldname": "breeding_success",
+   "fieldtype": "Check",
+   "label": "Breeding Success"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Farm Management",
+ "name": "Breeding Record",
+ "naming_rule": "By Naming Series",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Farm Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Farm Worker",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
+

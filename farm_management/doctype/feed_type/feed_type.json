@@ -1,0 +1,226 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:feed_name",
+ "creation": "2024-01-01 00:00:00.000000",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "feed_name",
+  "animal_type",
+  "feed_category",
+  "column_break_4",
+  "manufacturer",
+  "cost_per_unit",
+  "unit_of_measure",
+  "section_break_8",
+  "protein_content",
+  "fat_content",
+  "fiber_content",
+  "column_break_12",
+  "energy_content",
+  "calcium_content",
+  "phosphorus_content",
+  "section_break_16",
+  "ingredients",
+  "feeding_instructions",
+  "storage_requirements",
+  "column_break_20",
+  "shelf_life_days",
+  "minimum_stock_level",
+  "reorder_level",
+  "section_break_24",
+  "description",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "feed_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Feed Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "animal_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Animal Type",
+   "options": "Poultry\nPig\nBoth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "feed_category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Feed Category",
+   "options": "Starter\nGrower\nFinisher\nLayer\nBreeder\nMaintenance\nMedicated"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Data",
+   "label": "Manufacturer"
+  },
+  {
+   "fieldname": "cost_per_unit",
+   "fieldtype": "Currency",
+   "label": "Cost per Unit"
+  },
+  {
+   "fieldname": "unit_of_measure",
+   "fieldtype": "Select",
+   "label": "Unit of Measure",
+   "options": "kg\nlbs\ntons\nbags"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break",
+   "label": "Nutritional Information"
+  },
+  {
+   "fieldname": "protein_content",
+   "fieldtype": "Percent",
+   "label": "Protein Content (%)"
+  },
+  {
+   "fieldname": "fat_content",
+   "fieldtype": "Percent",
+   "label": "Fat Content (%)"
+  },
+  {
+   "fieldname": "fiber_content",
+   "fieldtype": "Percent",
+   "label": "Fiber Content (%)"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "energy_content",
+   "fieldtype": "Float",
+   "label": "Energy Content (kcal/kg)"
+  },
+  {
+   "fieldname": "calcium_content",
+   "fieldtype": "Percent",
+   "label": "Calcium Content (%)"
+  },
+  {
+   "fieldname": "phosphorus_content",
+   "fieldtype": "Percent",
+   "label": "Phosphorus Content (%)"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break",
+   "label": "Feed Details"
+  },
+  {
+   "fieldname": "ingredients",
+   "fieldtype": "Text Editor",
+   "label": "Ingredients"
+  },
+  {
+   "fieldname": "feeding_instructions",
+   "fieldtype": "Text Editor",
+   "label": "Feeding Instructions"
+  },
+  {
+   "fieldname": "storage_requirements",
+   "fieldtype": "Small Text",
+   "label": "Storage Requirements"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shelf_life_days",
+   "fieldtype": "Int",
+   "label": "Shelf Life (days)"
+  },
+  {
+   "fieldname": "minimum_stock_level",
+   "fieldtype": "Float",
+   "label": "Minimum Stock Level"
+  },
+  {
+   "fieldname": "reorder_level",
+   "fieldtype": "Float",
+   "label": "Reorder Level"
+  },
+  {
+   "fieldname": "section_break_24",
+   "fieldtype": "Section Break",
+   "label": "Additional Information"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Farm Management",
+ "name": "Feed Type",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Farm Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Farm Worker",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
+

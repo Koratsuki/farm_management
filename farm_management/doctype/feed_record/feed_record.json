@@ -1,0 +1,237 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-01-01 00:00:00.000000",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "date",
+  "farm",
+  "feed_type",
+  "column_break_5",
+  "pig",
+  "poultry_batch",
+  "animal_count",
+  "section_break_9",
+  "quantity",
+  "unit_of_measure",
+  "cost_per_unit",
+  "column_break_13",
+  "total_cost",
+  "feeding_time",
+  "fed_by",
+  "section_break_17",
+  "feed_conversion_ratio",
+  "wastage_quantity",
+  "weather_condition",
+  "column_break_21",
+  "feed_quality",
+  "animal_response",
+  "leftover_quantity",
+  "section_break_25",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "FR-.YYYY.-.MM.-.#####",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "farm",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Farm",
+   "options": "Farm",
+   "reqd": 1
+  },
+  {
+   "fieldname": "feed_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Feed Type",
+   "options": "Feed Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pig",
+   "fieldtype": "Link",
+   "label": "Pig",
+   "options": "Pig"
+  },
+  {
+   "fieldname": "poultry_batch",
+   "fieldtype": "Link",
+   "label": "Poultry Batch",
+   "options": "Poultry Batch"
+  },
+  {
+   "fieldname": "animal_count",
+   "fieldtype": "Int",
+   "label": "Animal Count"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break",
+   "label": "Feed Details"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "unit_of_measure",
+   "fieldtype": "Select",
+   "label": "Unit of Measure",
+   "options": "kg\nlbs\nbags"
+  },
+  {
+   "fieldname": "cost_per_unit",
+   "fieldtype": "Currency",
+   "label": "Cost per Unit"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Currency",
+   "label": "Total Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "feeding_time",
+   "fieldtype": "Time",
+   "label": "Feeding Time"
+  },
+  {
+   "fieldname": "fed_by",
+   "fieldtype": "Link",
+   "label": "Fed By",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break",
+   "label": "Performance Metrics"
+  },
+  {
+   "fieldname": "feed_conversion_ratio",
+   "fieldtype": "Float",
+   "label": "Feed Conversion Ratio"
+  },
+  {
+   "fieldname": "wastage_quantity",
+   "fieldtype": "Float",
+   "label": "Wastage Quantity"
+  },
+  {
+   "fieldname": "weather_condition",
+   "fieldtype": "Select",
+   "label": "Weather Condition",
+   "options": "Sunny\nCloudy\nRainy\nStormy\nFoggy"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "feed_quality",
+   "fieldtype": "Select",
+   "label": "Feed Quality",
+   "options": "Excellent\nGood\nFair\nPoor"
+  },
+  {
+   "fieldname": "animal_response",
+   "fieldtype": "Select",
+   "label": "Animal Response",
+   "options": "Excellent\nGood\nFair\nPoor\nRefused"
+  },
+  {
+   "fieldname": "leftover_quantity",
+   "fieldtype": "Float",
+   "label": "Leftover Quantity"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break",
+   "label": "Additional Information"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Farm Management",
+ "name": "Feed Record",
+ "naming_rule": "By Naming Series",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Farm Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Farm Worker",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
+

@@ -1,0 +1,296 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:pig_id",
+ "creation": "2024-01-01 00:00:00.000000",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "pig_id",
+  "farm",
+  "breed",
+  "gender",
+  "column_break_5",
+  "birth_date",
+  "acquisition_date",
+  "source",
+  "current_weight",
+  "section_break_10",
+  "pen_location",
+  "feed_type",
+  "health_status",
+  "column_break_14",
+  "vaccination_status",
+  "last_health_check",
+  "last_weight_date",
+  "section_break_18",
+  "sire",
+  "dam",
+  "generation",
+  "column_break_22",
+  "is_breeding_pig",
+  "breeding_status",
+  "last_breeding_date",
+  "section_break_26",
+  "purpose",
+  "expected_slaughter_date",
+  "market_weight_target",
+  "column_break_30",
+  "color_markings",
+  "ear_tag_number",
+  "microchip_id",
+  "section_break_34",
+  "notes",
+  "image"
+ ],
+ "fields": [
+  {
+   "fieldname": "pig_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pig ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "farm",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Farm",
+   "options": "Farm",
+   "reqd": 1
+  },
+  {
+   "fieldname": "breed",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Breed",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Gender",
+   "options": "Male\nFemale\nCastrated Male",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "birth_date",
+   "fieldtype": "Date",
+   "label": "Birth Date"
+  },
+  {
+   "fieldname": "acquisition_date",
+   "fieldtype": "Date",
+   "label": "Acquisition Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "label": "Source",
+   "options": "Born on Farm\nPurchased\nGift\nOther"
+  },
+  {
+   "fieldname": "current_weight",
+   "fieldtype": "Float",
+   "label": "Current Weight (kg)"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break",
+   "label": "Housing & Care"
+  },
+  {
+   "fieldname": "pen_location",
+   "fieldtype": "Data",
+   "label": "Pen Location"
+  },
+  {
+   "fieldname": "feed_type",
+   "fieldtype": "Link",
+   "label": "Feed Type",
+   "options": "Feed Type"
+  },
+  {
+   "fieldname": "health_status",
+   "fieldtype": "Select",
+   "label": "Health Status",
+   "options": "Healthy\nSick\nRecovering\nQuarantine\nDead"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vaccination_status",
+   "fieldtype": "Select",
+   "label": "Vaccination Status",
+   "options": "Up to Date\nOverdue\nNot Started"
+  },
+  {
+   "fieldname": "last_health_check",
+   "fieldtype": "Date",
+   "label": "Last Health Check"
+  },
+  {
+   "fieldname": "last_weight_date",
+   "fieldtype": "Date",
+   "label": "Last Weight Date"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break",
+   "label": "Breeding Information"
+  },
+  {
+   "fieldname": "sire",
+   "fieldtype": "Link",
+   "label": "Sire (Father)",
+   "options": "Pig"
+  },
+  {
+   "fieldname": "dam",
+   "fieldtype": "Link",
+   "label": "Dam (Mother)",
+   "options": "Pig"
+  },
+  {
+   "fieldname": "generation",
+   "fieldtype": "Int",
+   "label": "Generation"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "is_breeding_pig",
+   "fieldtype": "Check",
+   "label": "Is Breeding Pig"
+  },
+  {
+   "fieldname": "breeding_status",
+   "fieldtype": "Select",
+   "label": "Breeding Status",
+   "options": "Active\nPregnant\nLactating\nRetired\nNot Applicable"
+  },
+  {
+   "fieldname": "last_breeding_date",
+   "fieldtype": "Date",
+   "label": "Last Breeding Date"
+  },
+  {
+   "fieldname": "section_break_26",
+   "fieldtype": "Section Break",
+   "label": "Production Details"
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Select",
+   "label": "Purpose",
+   "options": "Breeding\nMeat Production\nShow\nPet"
+  },
+  {
+   "fieldname": "expected_slaughter_date",
+   "fieldtype": "Date",
+   "label": "Expected Slaughter Date"
+  },
+  {
+   "fieldname": "market_weight_target",
+   "fieldtype": "Float",
+   "label": "Market Weight Target (kg)"
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "color_markings",
+   "fieldtype": "Small Text",
+   "label": "Color/Markings"
+  },
+  {
+   "fieldname": "ear_tag_number",
+   "fieldtype": "Data",
+   "label": "Ear Tag Number"
+  },
+  {
+   "fieldname": "microchip_id",
+   "fieldtype": "Data",
+   "label": "Microchip ID"
+  },
+  {
+   "fieldname": "section_break_34",
+   "fieldtype": "Section Break",
+   "label": "Additional Information"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Farm Management",
+ "name": "Pig",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Farm Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Farm Worker",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
+

@@ -1,0 +1,192 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-01-01 00:00:00.000000",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "date",
+  "farm",
+  "poultry_batch",
+  "column_break_5",
+  "eggs_collected",
+  "broken_eggs",
+  "dirty_eggs",
+  "good_eggs",
+  "section_break_10",
+  "collection_time",
+  "weather_condition",
+  "temperature",
+  "column_break_14",
+  "collected_by",
+  "egg_size_distribution",
+  "section_break_17",
+  "production_rate",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "EPR-.YYYY.-.MM.-.#####",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "farm",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Farm",
+   "options": "Farm",
+   "reqd": 1
+  },
+  {
+   "fieldname": "poultry_batch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Poultry Batch",
+   "options": "Poultry Batch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "eggs_collected",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Eggs Collected",
+   "reqd": 1
+  },
+  {
+   "fieldname": "broken_eggs",
+   "fieldtype": "Int",
+   "label": "Broken Eggs"
+  },
+  {
+   "fieldname": "dirty_eggs",
+   "fieldtype": "Int",
+   "label": "Dirty Eggs"
+  },
+  {
+   "fieldname": "good_eggs",
+   "fieldtype": "Int",
+   "label": "Good Eggs",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break",
+   "label": "Collection Details"
+  },
+  {
+   "fieldname": "collection_time",
+   "fieldtype": "Time",
+   "label": "Collection Time"
+  },
+  {
+   "fieldname": "weather_condition",
+   "fieldtype": "Select",
+   "label": "Weather Condition",
+   "options": "Sunny\nCloudy\nRainy\nStormy\nFoggy"
+  },
+  {
+   "fieldname": "temperature",
+   "fieldtype": "Float",
+   "label": "Temperature (°C)"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "collected_by",
+   "fieldtype": "Link",
+   "label": "Collected By",
+   "options": "User"
+  },
+  {
+   "fieldname": "egg_size_distribution",
+   "fieldtype": "Small Text",
+   "label": "Egg Size Distribution"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break",
+   "label": "Analysis"
+  },
+  {
+   "fieldname": "production_rate",
+   "fieldtype": "Percent",
+   "label": "Production Rate (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Farm Management",
+ "name": "Egg Production Record",
+ "naming_rule": "By Naming Series",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Farm Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Farm Worker",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
+
