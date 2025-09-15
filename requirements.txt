@@ -1,0 +1,14 @@
+# ERPNext Farm Management App Requirements
+# This app is designed to work with ERPNext and doesn't require additional Python packages
+# beyond what ERPNext already provides
+
+# ERPNext provides all necessary dependencies:
+# - frappe
+# - erpnext
+# - python-dateutil
+# - requests
+# - jinja2
+# - werkzeug
+# - and other standard ERPNext dependencies
+
+# No additional requirements needed for this app
