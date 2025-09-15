@@ -55,7 +55,7 @@ A comprehensive farm management application for ERPNext, specifically designed f
 
 2. **Get the app:**
    ```bash
-   bench get-app https://github.com/yourusername/farm_management.git
+   bench get-app https://github.com/Koratsuki/farm_management.git
    ```
 
 3. **Install the app on your site:**
@@ -195,7 +195,7 @@ Create custom reports using ERPNext's Report Builder or by creating custom Pytho
 
 ### Community
 - [ERPNext Community Forum](https://discuss.erpnext.com/)
-- [GitHub Issues](https://github.com/yourusername/farm_management/issues)
+- [GitHub Issues](https://github.com/Koratsuki/farm_management/issues)
 
 ## Contributing
 
@@ -209,7 +209,7 @@ Create custom reports using ERPNext's Report Builder or by creating custom Pytho
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/farm_management.git
+git clone https://github.com/Koratsuki/farm_management.git
 
 # Create a new site for development
 bench new-site farm-dev.local
